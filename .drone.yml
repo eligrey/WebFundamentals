@@ -17,9 +17,6 @@ build:
     - "tools/dump-ci-state.sh > .state"
 deploy:
   bash:
-    when:
-      repo: google/WebFundamentals
-      branch: master
     image: crhym3/drone-plugin-bash-node
     env:
       - RIG_URL=$$RIG_URL
@@ -31,4 +28,4 @@ deploy:
       - cat .state
       - . .state
       - tools/auto-deploy.sh
-      - npm test
+      #- npm test
