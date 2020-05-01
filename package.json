@@ -56,9 +56,13 @@
     "inquirer": "^0.10.0",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
-    "through2": "^2.0.0"
+    "through2": "^2.0.0",
+    "snyk": "^1.316.1"
   },
   "scripts": {
-    "test": "node tools/bigrig/bigrig.js"
-  }
+    "test": "node tools/bigrig/bigrig.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
