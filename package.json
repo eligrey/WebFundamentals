@@ -53,7 +53,7 @@
     "gulp-using": "0.0.1",
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.2.4",
-    "inquirer": "^0.10.0",
+    "inquirer": "^0.12.0",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "through2": "^2.0.0"
